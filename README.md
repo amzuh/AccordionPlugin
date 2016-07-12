@@ -28,4 +28,4 @@ To customize the Accordion you need to change the Css. I will try to have option
 
 Have fun !
 
-![promisechains]( AccordionPlugin/accordion.png )
+![promisechains](https://github.com/amzuh/AccordionPlugin/blob/master/accordion.png?raw=true)
