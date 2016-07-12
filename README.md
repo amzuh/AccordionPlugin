@@ -27,3 +27,5 @@ After that you can init the plugin by doing,
 To customize the Accordion you need to change the Css. I will try to have options later so this step will not be necessary !
 
 Have fun !
+
+![promisechains]( AccordionPlugin/accordion.png )
