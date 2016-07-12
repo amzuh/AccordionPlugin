@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Accordion Plugin </title>
+<style>
+
+.galeria {
+	width: 1200px;
+	height: 200px;
+	margin: 200px auto;
+	background-color: #fff;
+}
+
+.item {
+	display: inline-block;
+	float: left;
+	overflow: hidden;
+	width: 160px;
+	height: 200px;
+	transition: all .4s linear;
+	opacity: .5;
+}
+
+.galeria:hover .item{
+	width: 100px;
+	cursor: pointer;
+}
+
+.galeria .item:hover {
+	width: 400px;
+	opacity: 1;
+}
+
+.item .sub {
+	background-color: #000;
+	color: #fff;
+	position: relative;
+	left:-400px;
+	opacity: .8;
+	bottom: 40px;
+	transition: all .4s linear;
+	height: 40px;
+	padding-left: 20px;
+}
+
+.galeria .item:hover .sub {
+	left:0;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="gal" class="galeria">
+
+</div>
+	<script type="text/javascript" src="accordion_script.js"></script> 
+	<script>
+	var accordion = new AccordionImages({
+
+		image0: '01.jpg',
+		text0: 'Sub text image',
+		image1: '02.jpg',
+		text1: 'texto2',
+		image2: '03.jpg',
+		text2: 'texto3',
+		image3: '04.jpg',
+		text3: 'texto4',
+		image4: '05.jpg',
+		text4: 'texto5'
+
+	});
+
+	accordion.init();
+</script>
+</body>
+</html>
